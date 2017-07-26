@@ -41,10 +41,6 @@ class Red_Monitor {
 			return false;
 		}
 
-		// Hierarchical post? Do nothing
-		if ( is_post_type_hierarchical( $post->post_type ) ) {
-			return false;
-		}
 
 		// Old Redirection slug not defined? Do nothing
 		if ( ! isset( $form_data['redirection_slug'] ) ) {
